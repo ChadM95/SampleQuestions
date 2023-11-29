@@ -7,6 +7,7 @@ namespace SampleQuestion1
 		const int LABOUR_COST = 45;
 		const double PARTS_VAT = 0.135;
 		const double LABOUR_VAT = 0.215;
+		const double DISCOUNT = 0.05;
 
 		//properties
 		public string Name { get; set; }
@@ -18,8 +19,13 @@ namespace SampleQuestion1
 
 
 		//ctor
-		public ServiceInvoice()
+		public ServiceInvoice(string name, string registration, int miles, int hours, int parts)
 		{
+			Name = name;
+			Registration = registration;
+			MilesOnClock = miles;
+			HoursLabour = hours;
+			PartsCost = parts;
 		}
 
 
