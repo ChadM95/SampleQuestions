@@ -29,10 +29,28 @@ namespace SampleQuestion1
 		}
 
 
-		//methods
+        //methods
+        public override string ToString()
+        {
+			return $"{Name} {Registration}";
+        }
+
+		public int CalculateLabourCost(int hours)
+		{
+			return hours * LABOUR_COST;
+		}
+
+		public double CalculateVatOnParts()
+		{
+			return PartsCost * PARTS_VAT;
+		}
+
+		public double CalculateVatOnLabour()
+		{
+			return HoursLabour * LABOUR_VAT;
+		}
 
 
-
-	}
+    }
 }
 

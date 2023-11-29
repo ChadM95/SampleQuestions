@@ -1,0 +1,5 @@
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.csproj.AssemblyReference.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.AssemblyInfoInputs.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.AssemblyInfo.cs
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.csproj.CoreCompileInputs.cache

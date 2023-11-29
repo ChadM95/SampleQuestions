@@ -6,7 +6,7 @@ class Program
     {
         //setup variables
         string name, registration;
-        int miles, hours, partsCost;
+        int miles, hours, partsCost, labourCost;
 
 
         //input
@@ -25,13 +25,15 @@ class Program
         Console.Write("Enter cost of parts> ");
         partsCost = int.Parse(Console.ReadLine());
 
-
-
-
         //create object
-
+        ServiceInvoice s1 = new ServiceInvoice(name,registration,miles,hours,partsCost);
 
         //calculations / methods
+
+        labourCost = s1.CalculateLabourCost(hours);
+
+
+
 
 
         Console.ReadLine();
