@@ -16,6 +16,12 @@ namespace SampleQuestion2
 			Hours = hours;
 		}
 
+		//methods calculate pay, deductions and disp
+
+
+
+
+
 	}
 }
 
