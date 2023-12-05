@@ -4,10 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        //get user input
+
+        //setup
+        Console.OutputEncoding = System.Text.Encoding.UTF8; 
         string name;
         decimal payRate;
         int hours;
+
+        //get user input
         GetUserInput(out name, out payRate, out hours);
 
         //create object

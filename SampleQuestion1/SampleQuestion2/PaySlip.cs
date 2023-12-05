@@ -20,7 +20,7 @@ namespace SampleQuestion2
 
         public override string ToString()
         {
-            return $"name: {Name} \nrate of pay: {RateOfPay} \nhours: {Hours}"
+            return $"name: {Name} \nrate of pay: {RateOfPay:C} \nhours: {Hours}"
 			+ $"\nNormal Hours: {GetNormalHours()} \nOvertime Hours: {GetOvertimeHours()}" ;
         }
 
