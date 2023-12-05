@@ -5,23 +5,27 @@ namespace SampleQuestion2
 	{
 		//properties
 		public string Name { get; set; }
-		public int RateOfPay { get; set; }
+		public decimal RateOfPay { get; set; }
 		public int Hours { get; set; }
 
 
-		public PaySlip(string name, int rateOfPay, int hours)
+		public PaySlip(string name, decimal rateOfPay, int hours)
 		{
 			Name = name;
 			RateOfPay = rateOfPay;
 			Hours = hours;
 		}
 
-		//methods calculate pay, deductions and disp
+        //methods calculate pay, deductions and disp
+
+        public override string ToString()
+        {
+            return $"name: {Name} rate of pay: {RateOfPay} hours: {Hours}";
+        }
 
 
 
 
-
-	}
+    }
 }
 
