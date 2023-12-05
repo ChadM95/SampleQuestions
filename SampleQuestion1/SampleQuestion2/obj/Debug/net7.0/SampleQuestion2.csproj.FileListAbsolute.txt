@@ -1,0 +1,15 @@
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/bin/Debug/net7.0/SampleQuestion2
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/bin/Debug/net7.0/SampleQuestion2.deps.json
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/bin/Debug/net7.0/SampleQuestion2.runtimeconfig.json
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/bin/Debug/net7.0/SampleQuestion2.dll
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/bin/Debug/net7.0/SampleQuestion2.pdb
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.csproj.AssemblyReference.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.AssemblyInfoInputs.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.AssemblyInfo.cs
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.csproj.CoreCompileInputs.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.dll
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/refint/SampleQuestion2.dll
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.pdb
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/SampleQuestion2.genruntimeconfig.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion2/obj/Debug/net7.0/ref/SampleQuestion2.dll

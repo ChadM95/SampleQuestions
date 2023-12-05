@@ -3,3 +3,13 @@
 /Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.AssemblyInfoInputs.cache
 /Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.AssemblyInfo.cs
 /Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.csproj.CoreCompileInputs.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/bin/Debug/net7.0/SampleQuestion1
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/bin/Debug/net7.0/SampleQuestion1.deps.json
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/bin/Debug/net7.0/SampleQuestion1.runtimeconfig.json
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/bin/Debug/net7.0/SampleQuestion1.dll
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/bin/Debug/net7.0/SampleQuestion1.pdb
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.dll
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/refint/SampleQuestion1.dll
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.pdb
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/SampleQuestion1.genruntimeconfig.cache
+/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion1/obj/Debug/net7.0/ref/SampleQuestion1.dll

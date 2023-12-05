@@ -20,10 +20,26 @@ namespace SampleQuestion2
 
         public override string ToString()
         {
-            return $"name: {Name} rate of pay: {RateOfPay} hours: {Hours}";
+            return $"name: {Name} \nrate of pay: {RateOfPay} \nhours: {Hours}";
         }
 
+		public int GetNormalHours()
+		{
+			if (Hours > 35)
+			{
+				return 35;
+			}
+			else return Hours;
+		}
 
+		public int GetOvertimeHours()
+		{
+			if (Hours > 35)
+			{
+				return Hours - 35;
+			}
+			else return 0;
+		}
 
 
     }
