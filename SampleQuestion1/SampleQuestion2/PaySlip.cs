@@ -5,7 +5,7 @@ namespace SampleQuestion2
 	{
         //constants
         const decimal OVERTIME_RATE = 1.5m;
-        const decimal TAX_RATE = 22.5m;
+        const decimal TAX_RATE = 0.225m;
         const decimal SOCIAL_CLUB = 0.05M;
         const decimal PENSION = 0.08M;
 
@@ -26,9 +26,22 @@ namespace SampleQuestion2
 
         public override string ToString()
         {
-            return $"name: {Name} \nrate of pay: {RateOfPay:C} \nhours: {Hours}"
-			+ $"\nNormal Hours: {GetNormalHours()} \nOvertime Hours: {GetOvertimeHours()}"
-			+ $"\nNormal Hourly rate: {RateOfPay:C} \n";
+			string output = "";
+
+			output += string.Format("\n{0,-22}: {1, 10}" ,  "Name" , Name);
+			output += string.Format("\n{0,-22}: {1,10:C}", "Rate", RateOfPay);
+			output += string.Format("\n{0,-22}: {1,10}", "hours", Hours);
+			output += string.Format("\n{0,-22}: {1,10}", "Normal Hours", GetNormalHours());
+			output += string.Format("\n{0,-22}: {1,10}", "Overtime Hours", GetOvertimeHours());
+			output += string.Format("\n{0,-22}: {1,10:F2}", "Ordinary Pay" , GetNormalPay());
+            output += string.Format("\n{0,-22}: {1,10:F2}", "Overtime Pay", GetOvertimePay());
+            output += string.Format("\n{0,-22}: {1,10:F2}", "Gross Pay", GetGrossPay());
+            output += string.Format("\n{0,-22}: {1,10:F2}", "Tax", GetTax());
+            output += string.Format("\n{0,-22}: {1,10:F2}", "Pension", GetPension());
+            output += string.Format("\n{0,-22}: {1,10:F2}", "Social club", GetSocial());
+            output += string.Format("\n{0,-22}: {1,10:F2}", "Net Pay",GetNetPay());
+
+            return output;
         }
 
 		public int GetNormalHours()
@@ -69,7 +82,20 @@ namespace SampleQuestion2
 			return GetGrossPay() * TAX_RATE;
 		}
 
-		public decimal Get
+		public decimal GetPension()
+		{
+			return GetGrossPay() * PENSION;
+		}
+
+		public decimal GetSocial()
+		{
+			return GetGrossPay() * SOCIAL_CLUB;
+		}
+
+		public decimal GetNetPay()
+		{
+			return GetGrossPay() - GetTax() - GetPension() - GetSocial();
+		}
 	}
 }
 
