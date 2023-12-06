@@ -2,14 +2,15 @@
 namespace SampleQuestion2
 {
 	public class PaySlip
-	{
+	{		
 		//properties
 		public string Name { get; set; }
 		public decimal RateOfPay { get; set; }
 		public int Hours { get; set; }
 
+        const decimal OVERTIME_RATE = 1.5m;
 
-		public PaySlip(string name, decimal rateOfPay, int hours)
+        public PaySlip(string name, decimal rateOfPay, int hours)
 		{
 			Name = name;
 			RateOfPay = rateOfPay;
@@ -21,7 +22,8 @@ namespace SampleQuestion2
         public override string ToString()
         {
             return $"name: {Name} \nrate of pay: {RateOfPay:C} \nhours: {Hours}"
-			+ $"\nNormal Hours: {GetNormalHours()} \nOvertime Hours: {GetOvertimeHours()}" ;
+			+ $"\nNormal Hours: {GetNormalHours()} \nOvertime Hours: {GetOvertimeHours()}"
+			+ $"\nNormal Hourly rate: {RateOfPay:C} \n";
         }
 
 		public int GetNormalHours()
@@ -40,6 +42,16 @@ namespace SampleQuestion2
 				return Hours - 35;
 			}
 			else return 0;
+		}
+
+		public decimal GetNormalPay()
+		{
+			return GetNormalHours() * RateOfPay;
+		}
+
+		public decimal GetOvertimePay()
+		{
+			return GetOvertimeHours() * (RateOfPay * OVERTIME_RATE);
 		}
 
 
