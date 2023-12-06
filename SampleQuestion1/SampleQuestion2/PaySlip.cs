@@ -2,14 +2,19 @@
 namespace SampleQuestion2
 {
 	public class PaySlip
-	{		
-		//properties
-		public string Name { get; set; }
+	{
+        //constants
+        const decimal OVERTIME_RATE = 1.5m;
+        const decimal TAX_RATE = 22.5m;
+        const decimal SOCIAL_CLUB = 0.05M;
+        const decimal PENSION = 0.08M;
+
+        //properties
+        public string Name { get; set; }
 		public decimal RateOfPay { get; set; }
 		public int Hours { get; set; }
 
-        const decimal OVERTIME_RATE = 1.5m;
-
+		//ctors
         public PaySlip(string name, decimal rateOfPay, int hours)
 		{
 			Name = name;
@@ -54,7 +59,17 @@ namespace SampleQuestion2
 			return GetOvertimeHours() * (RateOfPay * OVERTIME_RATE);
 		}
 
+		public decimal GetGrossPay()
+		{
+			return GetNormalPay() + GetOvertimePay();
+		}
 
-    }
+		public decimal GetTax()
+		{
+			return GetGrossPay() * TAX_RATE;
+		}
+
+		public decimal Get
+	}
 }
 
