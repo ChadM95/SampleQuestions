@@ -14,7 +14,7 @@ public class ElectricityBill
 
   //ctors
 
-    public ElectricityBill(string name, string accNo, int dayReadingCurrent, int dayReadingPrevious, int nightReadingCurrent, int nightReadingPrevious)
+   /* public ElectricityBill(string name, string accNo, int dayReadingCurrent, int dayReadingPrevious, int nightReadingCurrent, int nightReadingPrevious)
     {
         Name = name;
         AccountNo = accNo;
@@ -22,7 +22,7 @@ public class ElectricityBill
         DayReadingPrevious = dayReadingPrevious;
         NightReadingCurrent = nightReadingCurrent;
         NightReadingPrevious = nightReadingPrevious;
-    }
+    }*/
 
     //methods
     public override string ToString()
