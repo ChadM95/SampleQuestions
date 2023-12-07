@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleQuestion1", "SampleQu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleQuestion2", "SampleQuestion2\SampleQuestion2.csproj", "{8AB26369-8E56-4763-99A9-5EF4C9E5687B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleQuestion3", "SampleQuestion3\SampleQuestion3.csproj", "{89603E74-83C5-4203-8A3F-579101081F60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleQuestion4", "SampleQuestion3\SampleQuestion4.csproj", "{89603E74-83C5-4203-8A3F-579101081F60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion3/SampleQuestion3.csproj",
-      "projectName": "SampleQuestion3",
-      "projectPath": "/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion3/SampleQuestion3.csproj",
+      "projectUniqueName": "/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion3/SampleQuestion4.csproj",
+      "projectName": "SampleQuestion4",
+      "projectPath": "/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion3/SampleQuestion4.csproj",
       "packagesPath": "/Users/Chad/.nuget/packages/",
       "outputPath": "/Users/Chad/ATU/OOSD1/SampleQuestions/SampleQuestions/SampleQuestion1/SampleQuestion3/obj/",
       "projectStyle": "PackageReference",
