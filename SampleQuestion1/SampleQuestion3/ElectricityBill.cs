@@ -28,7 +28,16 @@ public class ElectricityBill
     //methods
     public override string ToString()
     {
-        return $"{Name} {AccountNo}";
+        string output = "";
+        string formatter = "{0,-22}{1,10}";
+        output += string.Format("--------------------------------------------");
+        output += string.Format(formatter,"Name :", Name);
+        output += string.Format(formatter,"Account Number :", AccountNo);
+        output += string.Format(formatter,"Current Day Reading :", DayReadingCurrent);
+        output += string.Format(formatter,"Previous Day Reading :", DayReadingPrevious);
+        output += string.Format(formatter,"Current Night Reading :", NightReadingCurrent);
+        output += string.Format(formatter,"Previous Night Reading :", NightReadingPrevious);
+        return output;
     }
 
     public static void GetUserInput(out string name, out string accNo, out int dayReadingCurrent, out int dayReadingPrevious, out int nightReadingCurrent, out int nightReadingPrevious)
