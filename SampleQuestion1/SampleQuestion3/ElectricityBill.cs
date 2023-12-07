@@ -1,3 +1,4 @@
+using System;
 using System.Security.Principal;
 
 namespace ConsoleApp1;
@@ -14,7 +15,7 @@ public class ElectricityBill
 
   //ctors
 
-   /* public ElectricityBill(string name, string accNo, int dayReadingCurrent, int dayReadingPrevious, int nightReadingCurrent, int nightReadingPrevious)
+    public ElectricityBill(string name, string accNo, int dayReadingCurrent, int dayReadingPrevious, int nightReadingCurrent, int nightReadingPrevious)
     {
         Name = name;
         AccountNo = accNo;
@@ -22,7 +23,7 @@ public class ElectricityBill
         DayReadingPrevious = dayReadingPrevious;
         NightReadingCurrent = nightReadingCurrent;
         NightReadingPrevious = nightReadingPrevious;
-    }*/
+    }
 
     //methods
     public override string ToString()
@@ -30,7 +31,21 @@ public class ElectricityBill
         return $"{Name} {AccountNo}";
     }
 
-
+    public static void GetUserInput(out string name, out string accNo, out int dayReadingCurrent, out int dayReadingPrevious, out int nightReadingCurrent, out int nightReadingPrevious)
+    {
+        Console.Write("Enter Name >> ");
+        name = Console.ReadLine();
+        Console.Write("Enter Account Number >> ");
+        accNo = Console.ReadLine();
+        Console.Write("Enter Current Day Reading >> ");
+        dayReadingCurrent = int.Parse(Console.ReadLine());
+        Console.Write("Enter Previous Day Reading >> ");
+        dayReadingPrevious = int.Parse(Console.ReadLine());
+        Console.Write("Enter Current Night Reading >> ");
+        nightReadingCurrent = int.Parse(Console.ReadLine());
+        Console.Write("Enter Previous Night Reading >> ");
+        nightReadingPrevious = int.Parse(Console.ReadLine());
+    }
 
 }
 
