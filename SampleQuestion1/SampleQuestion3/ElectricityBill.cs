@@ -40,12 +40,12 @@ public class ElectricityBill
         output += string.Format(formatter,"Previous Day Reading :", DayReadingPrevious);
         output += string.Format(formatter,"Current Night Reading :", NightReadingCurrent);
         output += string.Format(formatter,"Previous Night Reading :", NightReadingPrevious);
-        output += string.Format(formatter,"Day Units Used :", GetDayUnits());
-        output += string.Format(formatter, "Night Units Used :", GetNightUnits());
+        output += string.Format("Day Units Used : {0} @ 42c per unit = {1}" , GetDayUnits(),GetDayUnitCost());
+        output += string.Format("Night Units Used : {0} @ 21c per unit = {1}", GetNightUnits(),GetNightUnitCost());
         return output;
     }
 
-    public void GetUserInput(out string name, out string accNo, out int dayReadingCurrent, out int dayReadingPrevious, out int nightReadingCurrent, out int nightReadingPrevious)
+    public static void GetUserInput(out string name, out string accNo, out int dayReadingCurrent, out int dayReadingPrevious, out int nightReadingCurrent, out int nightReadingPrevious)
     {
         Console.Write("Enter Name >> ");
         name = Console.ReadLine();
@@ -74,6 +74,14 @@ public class ElectricityBill
         return NightReadingCurrent - NightReadingPrevious;
     }
 
+    public decimal GetDayUnitCost()
+    {
+        return GetDayUnits() * DAY_UNIT;
+    }
 
+    public decimal GetNightUnitCost()
+    {
+        return GetNightUnits() * NIGHT_UNIT;
+    }
 }
 
