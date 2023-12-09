@@ -25,12 +25,12 @@ public class ElectricityBill
         NightReadingPrevious = nightReadingPrevious;
     }
 
-    //methods
+  //methods
     public override string ToString()
     {
         string output = "";
-        string formatter = "{0,-22}{1,10}";
-        output += string.Format("--------------------------------------------");
+        string formatter = "{0,-22}{1,10}\n";
+        output += string.Format("--------------------------------------------\n");
         output += string.Format(formatter,"Name :", Name);
         output += string.Format(formatter,"Account Number :", AccountNo);
         output += string.Format(formatter,"Current Day Reading :", DayReadingCurrent);
