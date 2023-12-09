@@ -18,10 +18,31 @@ namespace ConsoleApp1
             //display object
             Console.WriteLine(eb1);
 
+            //colour bars
+            DisplayColourBars(eb1);
+
             //pause program
             Console.ReadLine();
-        }
 
+        }
+        static void DisplayColourBars(ElectricityBill eb)
+        {
+            int day = (int)(eb.GetDayPercent() * 100);
+            int night = (int)(eb.GetNightPercent() * 100);
+
+
+            Console.BackgroundColor = ConsoleColor.Green;
+            for (int i = 0; i < day; i++)
+            {
+                Console.Write(" ");
+            }
+
+            Console.BackgroundColor = ConsoleColor.Blue;
+            for (int i = 0; i < night; i++)
+            {
+                Console.Write(" ");
+            }
+        }        
     }
 }
 
