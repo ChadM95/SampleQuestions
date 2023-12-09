@@ -40,8 +40,13 @@ public class ElectricityBill
         output += string.Format(formatter,"Previous Day Reading :", DayReadingPrevious);
         output += string.Format(formatter,"Current Night Reading :", NightReadingCurrent);
         output += string.Format(formatter,"Previous Night Reading :", NightReadingPrevious);
-        output += string.Format("Day Units Used : {0} @ 42c per unit = {1}" , GetDayUnits(),GetDayUnitCost());
-        output += string.Format("Night Units Used : {0} @ 21c per unit = {1}", GetNightUnits(),GetNightUnitCost());
+        output += string.Format("Day Units Used : {0} @ 42c per unit = {1:C}\n" , GetDayUnits(),GetDayUnitCost());
+        output += string.Format("Night Units Used : {0} @ 21c per unit = {1:C}\n", GetNightUnits(),GetNightUnitCost());
+        output += string.Format("{0,-22}{1,10:C}\n", "Subtotal :", GetSubtotal());
+        output += string.Format("{0,-22}{1,10:C}\n", "VAT :", GetVAT());
+        output += string.Format("{0,-22}{1,10:C}\n", "Total :", GetTotal());
+        output += string.Format("{0,-22}{1,10:F2}\n", "Day Percentage :", GetDayPercent().ToString("P"));
+        output += string.Format("{0,-22}{1,10:F2}\n", "Night Percentage :", GetNightPercent().ToString("P"));
         return output;
     }
 
@@ -83,5 +88,37 @@ public class ElectricityBill
     {
         return GetNightUnits() * NIGHT_UNIT;
     }
+
+    public decimal GetSubtotal()
+    {
+        return GetDayUnitCost() + GetNightUnitCost();
+    }
+
+    public decimal GetVAT()
+    {
+        return GetSubtotal() * VAT;
+    }
+
+    public decimal GetTotal()
+    {
+        return GetSubtotal() + GetVAT();
+    }
+
+    public double GetDayPercent()
+    {
+        int dayUse = GetDayUnits(), nightUse = GetNightUnits();
+        int total = dayUse + nightUse;
+        double dayPercent = dayUse / (double)total;
+        return dayPercent;
+    }
+
+    public double GetNightPercent()
+    {
+        int dayUse = GetDayUnits(), nightUse = GetNightUnits();
+        int total = dayUse + nightUse;
+        double nightPercent = nightUse / (double)total;
+        return nightPercent;
+    }
+
 }
 
