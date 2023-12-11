@@ -50,22 +50,6 @@ public class ElectricityBill
         return output;
     }
 
-    public static void GetUserInput(out string name, out string accNo, out int dayReadingCurrent, out int dayReadingPrevious, out int nightReadingCurrent, out int nightReadingPrevious)
-    {
-        Console.Write("Enter Name >> ");
-        name = Console.ReadLine();
-        Console.Write("Enter Account Number >> ");
-        accNo = Console.ReadLine();
-        Console.Write("Enter Current Day Reading >> ");
-        dayReadingCurrent = int.Parse(Console.ReadLine());
-        Console.Write("Enter Previous Day Reading >> ");
-        dayReadingPrevious = int.Parse(Console.ReadLine());
-        Console.Write("Enter Current Night Reading >> ");
-        nightReadingCurrent = int.Parse(Console.ReadLine());
-        Console.Write("Enter Previous Night Reading >> ");
-        nightReadingPrevious = int.Parse(Console.ReadLine());
-    }
-
     //work out day and night units by subtracting previous values from current ones
     //calculate percentage use day / night
 

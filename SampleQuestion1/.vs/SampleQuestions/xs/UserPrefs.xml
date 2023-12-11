@@ -1,20 +1,16 @@
 ﻿<Properties StartupConfiguration="{89603E74-83C5-4203-8A3F-579101081F60}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SampleQuestion3/ElectricityBill.cs">
+  <MonoDevelop.Ide.ItemProperties.SampleQuestion2 FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleQuestion3/Program.cs">
     <Files>
-      <File FileName="SampleQuestion3/Program.cs" Line="17" Column="1" />
-      <File FileName="SampleQuestion3/ElectricityBill.cs" Line="41" Column="6" />
+      <File FileName="SampleQuestion3/Program.cs" Line="13" Column="13" />
+      <File FileName="SampleQuestion3/ElectricityBill.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SampleQuestions" expanded="True">
-            <Node name="SampleQuestion1" expanded="True" />
             <Node name="SampleQuestion4">
-              <Node name="ElectricityBill.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -23,7 +19,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.SampleQuestion4 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.SampleQuestion2 FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.SampleQuestion1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SampleQuestion1 PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
