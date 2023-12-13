@@ -9,7 +9,7 @@ class Program
         int dayCurrent, dayPrevious, nightCurrent, nightPrevious;
 
         //get user input
-
+        GetUserInput(out name, out accNo, out dayCurrent, out dayPrevious, out nightCurrent, out nightPrevious);
 
         Console.ReadLine();
     }
