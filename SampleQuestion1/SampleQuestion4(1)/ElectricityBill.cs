@@ -3,6 +3,8 @@ namespace SampleQuestion4_1_
 {
 	public class ElectricityBill
 	{
+
+
 		//properties
 		public string Name { get; set; }
 		public string AccNo { get; set; }
@@ -12,6 +14,10 @@ namespace SampleQuestion4_1_
 		public int NightPrevious { get; set; }
 
 		//ctors
+		public ElectricityBill()
+		{
+		}
+
 		public ElectricityBill(string name, string accNo, int dayCurrent, int dayPrevious, int nightCurrent, int nightPrevious)
 		{
 			Name = name;
@@ -21,6 +27,17 @@ namespace SampleQuestion4_1_
 			NightCurrent = nightCurrent;
 			NightPrevious = nightPrevious;
 		}
-	}
+
+        //methods
+
+        public override string ToString()
+        {
+			return string.Format($"{Name} {AccNo}");
+        }
+
+
+
+
+    }
 }
 

@@ -11,6 +11,13 @@ class Program
         //get user input
         GetUserInput(out name, out accNo, out dayCurrent, out dayPrevious, out nightCurrent, out nightPrevious);
 
+        //create object
+        ElectricityBill eb1 = new ElectricityBill(name,accNo,dayCurrent,dayPrevious,nightCurrent,nightPrevious);
+
+        //display
+        Console.WriteLine(eb1);
+
+        //pause program
         Console.ReadLine();
     }
 
