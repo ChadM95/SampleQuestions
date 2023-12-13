@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Runtime.ConstrainedExecution;
+
 namespace SampleQuestion4_1_
 {
-	public class ElectricityBill
+    public class ElectricityBill
 	{
+		//constants
+		const decimal DAY_UNIT = 0.42m;
+		const decimal NIGHT_UNIT = 0.21m ;
+        const decimal VAT = 0.135m ;
 
-
-		//properties
-		public string Name { get; set; }
+        //properties
+        public string Name { get; set; }
 		public string AccNo { get; set; }
 		public int DayCurrent { get; set; }
 		public int DayPrevious { get; set; }
