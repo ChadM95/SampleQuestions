@@ -50,7 +50,7 @@ public class ElectricityBill
         return output;
     }
 
-    #region 
+    #region Calculations
 
     //work out day and night units by subtracting previous values from current ones
     //calculate percentage use day / night

@@ -38,7 +38,7 @@ namespace SampleQuestion4_1_
         public override string ToString()
         {
 			string output = "";
-			string formatter = "{0,-25}{1,10}\n";
+			string formatter = "{0,-25:F2}{1,10:F2}\n";
 
 			output += string.Format(formatter, "Name", Name);
             output += string.Format(formatter, "Account Number", AccNo);
@@ -47,10 +47,17 @@ namespace SampleQuestion4_1_
             output += string.Format(formatter, "Current Night Units", NightCurrent);
             output += string.Format(formatter, "Previous Day Units", NightPrevious);
             output += string.Format("Day units: {0} @ {1} per unit = {2}",GetDayUnits(), DAY_UNIT,GetDayCost());
-            output += string.Format("Night units: {0} @ {1} per unit = {2}", GetNightUnits(), NIGHT_UNIT, GetNightCost());
-            output += string.Format(formatter, "Subtotal", );
+            output += string.Format("\nNight units: {0} @ {1} per unit = {2}", GetNightUnits(), NIGHT_UNIT, GetNightCost());
+            output += string.Format(formatter, "Subtotal", GetSubtotal());
+            output += string.Format(formatter, "VAT", GetVAT());
+            output += string.Format(formatter, "Total inc VAT", GetTotal());
+			output += string.Format("\n");
+			output += string.Format(formatter, "day percentage",GetDayPercent().ToString("p"));
+            output += string.Format(formatter, "night percentage", GetNightPercent().ToString("p"));
             return output;
         }
+
+		//calculations
 
 		public int GetDayUnits()
 		{
@@ -76,6 +83,32 @@ namespace SampleQuestion4_1_
 		{
 			return GetDayCost() + GetNightCost();
 		}
-	}
+
+		public decimal GetVAT()
+		{
+			return GetSubtotal() * VAT;
+		}
+
+		public decimal GetTotal()
+		{
+			return GetSubtotal() + GetVAT();
+		}
+
+		public double GetDayPercent()
+		{
+			int dayUse = GetDayUnits(), nightUse = GetNightUnits();
+			double total = dayUse + nightUse;
+			double dayPercent = dayUse / total;
+			return dayPercent;
+		}
+
+        public double GetNightPercent()
+        {
+            int dayUse = GetDayUnits(), nightUse = GetNightUnits();
+            double total = dayUse + nightUse;
+            double nightPercent = nightUse / total;
+            return nightPercent;
+        }
+    }
 }
 
