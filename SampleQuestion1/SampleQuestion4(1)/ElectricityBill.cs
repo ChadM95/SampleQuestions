@@ -37,12 +37,45 @@ namespace SampleQuestion4_1_
 
         public override string ToString()
         {
-			return string.Format($"{Name} {AccNo}");
+			string output = "";
+			string formatter = "{0,-25}{1,10}\n";
+
+			output += string.Format(formatter, "Name", Name);
+            output += string.Format(formatter, "Account Number", AccNo);
+            output += string.Format(formatter, "Current Day Units", DayCurrent);
+            output += string.Format(formatter, "Previous Day Units", DayPrevious);
+            output += string.Format(formatter, "Current Night Units", NightCurrent);
+            output += string.Format(formatter, "Previous Day Units", NightPrevious);
+            output += string.Format("Day units: {0} @ {1} per unit = {2}",GetDayUnits(), DAY_UNIT,GetDayCost());
+            output += string.Format("Night units: {0} @ {1} per unit = {2}", GetNightUnits(), NIGHT_UNIT, GetNightCost());
+            output += string.Format(formatter, "Subtotal", );
+            return output;
         }
 
+		public int GetDayUnits()
+		{
+			return DayCurrent - DayPrevious;
+		}
 
+        public int GetNightUnits()
+        {
+            return NightCurrent - NightPrevious;
+        }
 
+		public decimal GetDayCost()
+		{
+			return GetDayUnits() * DAY_UNIT;
+		}
 
-    }
+		public decimal GetNightCost()
+		{
+			return GetNightUnits() * NIGHT_UNIT;
+		}
+
+		public decimal GetSubtotal()
+		{
+			return GetDayCost() + GetNightCost();
+		}
+	}
 }
 
