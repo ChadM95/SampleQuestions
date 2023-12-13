@@ -8,7 +8,7 @@ public class ElectricityBill
     //constants
     decimal DAY_UNIT = 0.42m, NIGHT_UNIT = 0.21m, VAT = 0.135m;
 
-  //properties
+    //properties
     public string Name { get; set; }
     public string AccountNo { get; set; }
     public int DayReadingCurrent { get; set; }
@@ -49,6 +49,8 @@ public class ElectricityBill
         output += string.Format("{0,-22}{1,10:F2}\n", "Night Percentage :", GetNightPercent().ToString("P"));
         return output;
     }
+
+    #region 
 
     //work out day and night units by subtracting previous values from current ones
     //calculate percentage use day / night
@@ -106,3 +108,4 @@ public class ElectricityBill
 
 }
 
+#endregion

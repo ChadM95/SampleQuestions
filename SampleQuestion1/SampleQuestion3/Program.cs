@@ -9,20 +9,25 @@ namespace ConsoleApp1
             string name, accNo;
             int dayReadingCurrent, dayReadingPrevious, nightReadingCurrent, nightReadingPrevious;
 
-            //get user input 
-            GetUserInput(out name, out accNo, out dayReadingCurrent, out dayReadingPrevious, out nightReadingCurrent, out nightReadingPrevious);
+            //Loop 3 times
+            for (int i = 0; i < 3; i++)
+            {
+                //get user input 
+                GetUserInput(out name, out accNo, out dayReadingCurrent, out dayReadingPrevious, out nightReadingCurrent, out nightReadingPrevious);
 
-            //create object
-            ElectricityBill eb1 = new ElectricityBill(name,accNo,dayReadingCurrent,dayReadingPrevious,nightReadingCurrent,nightReadingPrevious);
+                //create object
+                ElectricityBill eb1 = new ElectricityBill(name, accNo, dayReadingCurrent, dayReadingPrevious, nightReadingCurrent, nightReadingPrevious);
 
-            //display object
-            Console.WriteLine(eb1);
+                //display object
+                Console.WriteLine(eb1);
 
-            //colour bars
-            DisplayColourBars(eb1);
+                //colour bars
+                DisplayColourBars(eb1);
 
-            //pause program
-            Console.ReadLine();
+                //pause program
+                Console.ReadLine();
+
+            }
 
         }
 
@@ -47,6 +52,7 @@ namespace ConsoleApp1
             int day = (int)(eb.GetDayPercent() * 100);
             int night = (int)(eb.GetNightPercent() * 100);
 
+            Console.ResetColor();
 
             Console.BackgroundColor = ConsoleColor.Green;
             for (int i = 0; i < day; i++)
@@ -59,6 +65,7 @@ namespace ConsoleApp1
             {
                 Console.Write(" ");
             }
+            Console.ResetColor();
         }        
     }
 }
